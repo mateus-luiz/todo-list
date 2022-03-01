@@ -5,13 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <input class="text-ipt" type="text">
-    <button class="add-btn">+</button>
-    <div>   
-        <input class="text-item" type="text" value="Texto aqui" disabled>
-        <button class="remove-btn" type="button">R</button>
+    <div>
+        <div class="add-item">
+            <input class="text-ipt" id="text-ipt" type="text">
+            <button class="add-btn" id="add-btn">+</button>
+        </div>
+        <div id="todo-area" class="todo-area">
+        </div>
     </div>
 </body>
+
+<script src="js/main.js"></script>
 </html>
