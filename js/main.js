@@ -6,11 +6,10 @@ let items = [];
 
 addBtn.addEventListener('click', () => {
     items[i] = `
-        <div id="item-${i}">
+        <div class="items" id="item-${i}">
             <input class="text-item" id="value-${i}" type="text" value="${text.value}" disabled>
-            <button class="remove-btn" type="button" onclick="removeItem(${i})">R</button>
+            <a class="remove-btn" onclick="removeItem(${i})"><img src="images/trash.svg"></a>
         </div>`;
-    const value = text.value;
     todoArea.innerHTML += items[i];
     text.value = '';
     i++;
